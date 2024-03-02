@@ -1,0 +1,37 @@
+body{
+    overflow-x: hidden;
+    background-color: rgb(239, 253, 253);
+}
+#inicio{
+    padding-top: 32px;
+}
+#imagem1, #imagem2{
+    width: 60%;
+}
+#imagem1{
+    max-height: 90%;
+}
+.text-orange{
+    color: orangered;
+}
+#play{
+    height: 48px;
+}
+.btn-dark{
+    padding: 12px;
+}
+#sobre img{
+    border-radius: 24px;
+}
+#sublinhado{
+    width: 48px;
+    border-bottom: 2px solid orangered;
+    margin: 24px 0;
+}
+.icon{
+    color: orangered;
+}
+.active{
+    color: orangered;
+    font-size: 1.2em;
+}

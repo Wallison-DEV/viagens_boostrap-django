@@ -1,0 +1,184 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static './css/index.css'%}">
+    <title>Document</title>
+</head>
+<body class="w-100">
+    {% block titulo %}
+    <header class="p-3">
+        <nav class="navbar navbar-expand-lg fixed-top px-4 bg-light">
+            <a href="#" class="navbar-brand">Busca</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a href="{% url 'sobre' %}" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Viagens</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'sobre' %}" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <form class="d-flex ps-5">
+                <img class="px-2" src="{% static './images/facebook.png' %}" alt="">
+                <img class="px-2" src="{% static './images/instagram.png' %}" alt="">
+                <img class="px-2" src="{% static './images/twitter.png' %}" alt="">
+                <img class="px-2" src="{% static './images/tik-tok.png' %}" alt="">
+            </form>
+        </nav>
+    </header>
+    {% endblock %}
+    <section id="inicio">
+        <div class="row py-5 my-5">
+            <div class="col-md-6 text-center pt-5 p-5">
+                <h6 class="text-orange">O seu site de viagens<h6>
+                <h1>Viaje para criar memórias em todo o mundo</h1>
+                <h5>Não vi todos os lugares, mas estão na minha lista</h5>
+                <div class="botoes mt-4">
+                    <button class="btn btn-dark me-2 rounded-pill">Saiba mais</button>
+                    <a href=""><img id="play" src="{% static './images/toque.png' %}" alt=""></a>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <img class="shadow-lg rounded me-4" id="imagem1" src="{% static './images/hero_venice.jpg' %}" alt="">
+                <img class="shadow-lg rounded" id="imagem2" src="{% static './images/hero_paris.jpg' %}" alt="">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </section>
+    <div class="container">
+        <div id="sobre" class="row p-5  m-auto justify-content-center">
+            <img class="col col-md-3 ms-4" src="{% static './images/sobre.jpg' %}" alt="Sobre nós">
+            <div class="col col-md-6">
+                <h2>Sobre nós:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, aperiam non! Labore repudiandae voluptas vero cupiditate iure voluptate sapiente aspernatur nihil nostrum placeat, ipsum totam nulla nemo. Iure, nulla dicta.</p>
+            </div>
+            <div class="col col-md d-block">
+                <h3>Assine a newsletter</h3>
+                <label for="email-news">Email*</label>
+                <input class="w-100 form-control mt-2" id="email-news" type="text" placeholder="Insira seu email aqui">
+                <button class="w-100 btn btn-primary mt-2">Assinar agora</button>
+            </div>
+        </div>
+    </div>
+    <section id="viagens">
+        <div class="container">
+            <h5 id="motivo" class="px-5 mx-5 text-center">Descubra o mundo, explore culturas fascinantes e crie memórias inesquecíveis em cada jornada. Sua próxima aventura está apenas a um clique de distância!</h5>
+            <div class="row">
+                <div class="col my-3">
+                    <div class="card">
+                        <img class="card-img" src="{% static './images/nova-york.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h4 class="border-bottom border-dark pb-2">Dê uma enorme dentada na big apple</h4>
+                            <div class="d-flex">
+                                <h4>Nova Iorque, EUA</h4>
+                                <button class="btn btn-primary ms-auto me-2">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-3">
+                    <div class="card">
+                        <img class="card-img" src="{% static './images/nova-york.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h4 class="border-bottom border-dark pb-2">Dê uma enorme dentada na big apple</h4>
+                            <div class="d-flex">
+                                <h4>Nova Iorque, EUA</h4>
+                                <button class="btn btn-primary ms-auto me-2">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-3">
+                    <div class="card">
+                        <img class="card-img" src="{% static './images/nova-york.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h4 class="border-bottom border-dark pb-2">Dê uma enorme dentada na big apple</h4>
+                            <div class="d-flex">
+                                <h4>Nova Iorque, EUA</h4>
+                                <button class="btn btn-primary ms-auto me-2">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col my-3">
+                    <div class="card">
+                        <img class="card-img" src="{% static './images/nova-york.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h4 class="border-bottom border-dark pb-2">Dê uma enorme dentada na big apple</h4>
+                            <div class="d-flex">
+                                <h4>Nova Iorque, EUA</h4>
+                                <button class="btn btn-primary ms-auto me-2">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-3">
+                    <div class="card">
+                        <img class="card-img" src="{% static './images/nova-york.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h4 class="border-bottom border-dark pb-2">Dê uma enorme dentada na big apple</h4>
+                            <div class="d-flex">
+                                <h4>Nova Iorque, EUA</h4>
+                                <button class="btn btn-primary ms-auto me-2">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-3">
+                    <div class="card">
+                        <img class="card-img" src="{% static './images/nova-york.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h4 class="border-bottom border-dark pb-2">Dê uma enorme dentada na big apple</h4>
+                            <div class="d-flex">
+                                <h4>Nova Iorque, EUA</h4>
+                                <button class="btn btn-primary ms-auto me-2">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-100">
+        <div id="contato" class="d-flex row m-5 p-4">
+            <div class="col col-md-6">
+                <h3>Entre em contato</h3>
+                <div id="sublinhado"></div>
+                <p>Fale com a gente! Quer saber mais sobre o apê, sobre o Rio? Mande um email que nos respondemos! <br><br>
+                    email : wallisonzwka@gmail.com <br>
+                    telefone : +55(38)99972-9817
+                </p>
+            </div>
+            <div class="col col-md-2 color-black">
+                <h3>Siga-nos</h3>
+                <div id="sublinhado"></div>
+                <img class="icon" src="{% static './images/facebook.png' %}" alt="">
+                <img src="{% static './images/instagram.png' %}" alt="">
+                <img src="{% static './images/twitter.png' %}" alt="">
+                <img src="{% static './images/tik-tok.png' %}" alt="">
+            </div>
+            <div class="col col-md-4">
+                <h3>Receba nossas Novidades</h3>
+                <div id="sublinhado"></div>
+                <input class="w-100 form-control my-3" type="text" placeholder="Insira seu email aqui*">
+                <button class="w-100 btn btn-primary">Participar</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

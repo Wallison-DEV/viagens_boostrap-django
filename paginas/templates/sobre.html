@@ -1,0 +1,30 @@
+{% extends 'modelo.html' %}
+{% load static %}
+
+{% block titulo %}
+<header class="p-3">
+    <nav class="navbar navbar-expand-lg fixed-top px-4 bg-light">
+        <a href="#" class="navbar-brand">mudança</a>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+                <a href="#" class="nav-link">do</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">titulo</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">reutilizando</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">modelo</a>
+            </li>
+        </ul>
+        <form class="d-flex ps-5">
+            <img class="px-2" src="{% static './images/facebook.png' %}" alt="">
+            <img class="px-2" src="{% static './images/instagram.png' %}" alt="">
+            <img class="px-2" src="{% static './images/twitter.png' %}" alt="">
+            <img class="px-2" src="{% static './images/tik-tok.png' %}" alt="">
+        </form>
+    </nav>
+</header>
+{% endblock %}
